@@ -1,0 +1,102 @@
+body {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.App {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.Mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35%;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+
+.card {
+    margin: 5vw;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* hinzugefügt */
+    max-width: 800px; /* hinzugefügt */
+    height: 222px;
+}
+
+.openButton {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background-color: #2a3e69;
+    cursor: pointer;
+    position: relative;
+}
+
+.openButton:hover .line1,
+.openButton:hover .line2 {
+    background-color: #487DB0;
+}
+
+.openButton .line1,
+.openButton .line2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+.openButton .line1 {
+    transform: rotate(45deg);
+}
+
+.openButton .line2 {
+    transform: rotate(-45deg);
+}
+
+.closedButton {
+    margin-right: 10px;
+    width: 20px;
+    height: 3px;
+    border: 0;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.closedButton:hover {
+    background-color: #487DB0;
+}

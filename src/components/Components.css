@@ -1,0 +1,238 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 999;
+}
+
+.navbar:before {
+    transform: translateY(-60px);
+}
+
+.navbar:hover {
+    transform: translateY(0);
+}
+
+.visible {
+    transform: translateY(-60px);
+}
+
+
+.button {
+    border: transparent;
+    background: transparent;
+    margin: 10px;
+    height: 50px;
+    font: 1.3rem Inconsolata, monospace;
+    color: aqua;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: #50a0b0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+    width: 100%;
+    min-width: 800px;
+
+}
+
+.header-sub {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 800px;
+}
+
+h1 {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 150px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+    word-spacing: 15px;
+}
+
+h3 {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 60px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.quote {
+    display: flex;
+    justify-content: flex-start;
+    width: 30vw;
+    color: white;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    max-width: 500px;
+    min-width: 400px;
+}
+
+.quote:hover {
+    transform: scale(1.15);
+    border: 0
+}
+
+.quote h1 {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.quote h2 {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.quote p {
+    font: 1.3rem Inconsolata, monospace;
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 12px;
+    padding: 0;
+}
+
+.quote h3 {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    content: " wizard"
+}
+
+.quote h3:after {
+    content: "magician, wizzard";
+    font-family: "Poppins", Sans-serif;
+    color: aqua;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+.quote h4 {
+    font-family: "Poppins", Sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+
+}
+
+
+.expertise {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 90vw;
+    height: 38vh;
+    margin: 10px;
+    color: white;
+    max-height: 280px;
+    flex-wrap: wrap;
+}
+
+.tech-stack {
+    min-width: 400px;
+    margin: 0px;
+    border: 3px solid;
+    border-color: aliceblue;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px;
+
+}
+
+.text-container {
+    margin-right: 30px;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 400;
+    color: #487DB0;
+    font-size: 30px;
+    word-spacing: 15px;
+
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px
+}
+
+.expertise-desc {
+    margin: 20px
+
+}
+
+.desc {
+    font: 1.2rem Inconsolata, monospace;
+    margin-left: 20px;
+    margin: 5px 12px 5px 12px
+}
+
+.brace {
+    color: aqua;
+    margin: 0;
+
+}
+
+.cv {
+    transition: transform 0.2s ease-in-out;
+}
+
+.cv:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
