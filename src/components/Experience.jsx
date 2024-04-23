@@ -39,7 +39,6 @@ export function Experience() {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        alignItems: "center", 
         width: "100%",
         minWidth: 800,
         marginBottom: `${marginBottom}px`
