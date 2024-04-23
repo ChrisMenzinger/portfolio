@@ -6,16 +6,26 @@ export function Experience() {
     const [open1, setOpen1] = useState(true);
     const [open2, setOpen2] = useState(false);
     const [open3, setOpen3] = useState(false);
+
+    const [marginBottom, setMarginBottom] = useState(100);
+
+    const addMarginBottom = (open) => {
+        open ? setMarginBottom(prevMarginBottom => prevMarginBottom + 100) : setMarginBottom(prevMarginBottom => prevMarginBottom - 100)
+      };
+
     const handleClick = (number) => {
         switch (number) {
             case 1:
                 setOpen1(!open1);
+                addMarginBottom(!open1)
                 break;
             case 2:
                 setOpen2(!open2);
+                addMarginBottom(!open2)
                 break;
             case 3:
                 setOpen3(!open3);
+                addMarginBottom(!open3)
                 break;    
             default:
                 break;
@@ -25,8 +35,20 @@ export function Experience() {
     const toolsSmax = ["React", "Angular", "Node.js", "GitLab", "Docker", "Rest-API", "JavaScript"]
     const toolsPA = ["Spring", "Rest-API", "Jenkins", "Git", "SQL", "Java"]
 
+    const header = {
+        display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        alignItems: "center", 
+        width: "100%",
+        minWidth: 800,
+        marginBottom: `${marginBottom}px`
+    }
+
+    console.log(marginBottom)
+
     return (
-        <div className="exp-header">
+        <div style={header}>
             <h3 style={{margin: 20}}>PROFESSIONAL EXPERIENCE</h3>
             <div style={styles.container}>
                 <ExpElement title="Software Engineer @ Compax" time="2023 - Present" open={open1}

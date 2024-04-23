@@ -15,7 +15,7 @@ export function Contact(props) {
                 <p style={styles.git}
                    onClick={() => window.open("https://www.linkedin.com/in/christoph-menzinger-62bb44280/")}>LinkedIn</p>
                 <p style={styles.git}
-                   onClick={() => window.open("https://github.com/ChrisMenzinger")}>GitLap</p>
+                   onClick={() => window.open("https://github.com/ChrisMenzinger")}>GitHub</p>
             </div>
             <div>
                 <p style={styles.h1}>Curriculum Vitae</p>
