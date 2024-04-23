@@ -14,6 +14,9 @@ export function Experience() {
             case 2:
                 setOpen2(!open2);
                 break;
+            case 3:
+                setOpen3(!open3);
+                break;    
             default:
                 break;
         }
@@ -26,18 +29,29 @@ export function Experience() {
         <div className="header">
             <h3 style={{margin: 20}}>PROFESSIONAL EXPERIENCE</h3>
             <div style={styles.container}>
-                <ExpElement title="Web Developer @ smaXtec animal care" time="2022 - Present" open={open1}
+                <ExpElement title="Software Engineer @ Compax" time="2023 - Present" open={open1}
                             click={() => {
                                 handleClick(1)
                             }}/>
                 {open1 && (
-                    <ExpContainer tools={toolsSmax} loc="Graz, Austria">
-                        Developing activities for the WEB, mobile Apps and API Services
+                    <ExpContainer tools={toolsCompax} loc="Graz, Austria">
+                       Developing Rest/SOAP-APIs,
+                        implementing and extending Kafka,
+                        developing and improving a server-side
+                        web-interface
                     </ExpContainer>)}
-                <ExpElement title="Software Engineer @ proALPHA" time="2021 - 2022" open={open2} click={() => {
-                    handleClick(2)
-                }}/>
+
+                <ExpElement title="Web Developer @ smaXtec animal care" time="2022 - 2023" open={open2}
+                        click={() => { handleClick(2) }}/>
                 {open2 && (
+                <ExpContainer tools={toolsSmax} loc="Gleisdorf, Austria">
+                    Development of interfaces between third-party software and customization of existing software
+                    for customers
+                </ExpContainer>)}
+
+                <ExpElement title="Software Engineer @ proALPHA" time="2021 - 2022" open={open3} 
+                    click={() => { handleClick(3) }}/>
+                {open3 && (
                     <ExpContainer tools={toolsPA} loc="Gleisdorf, Austria">
                         Development of interfaces between third-party software and customization of existing software
                         for customers

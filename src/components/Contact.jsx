@@ -13,7 +13,9 @@ export function Contact(props) {
 
                 <p style={styles.mail} onClick={openEmailTool}>menzinger202@gmail.com</p>
                 <p style={styles.git}
-                   onClick={() => window.open("https://gitlab.com/ChrisMenzinger")}>GitLap</p>
+                   onClick={() => window.open("https://www.linkedin.com/in/christoph-menzinger-62bb44280/")}>LinkedIn</p>
+                <p style={styles.git}
+                   onClick={() => window.open("https://github.com/ChrisMenzinger")}>GitLap</p>
             </div>
             <div>
                 <p style={styles.h1}>Curriculum Vitae</p>
@@ -79,14 +81,16 @@ const styles = {
         cursor: "pointer",
         color: "aqua",
         textDecoration: "underline",
-        marginBottom: 0,
+        marginBottom: 2,
     },
     git: {
-        marginTop: 5,
+        marginTop: 0,
+        marginBottom: 2,
         marginLeft: "40px",
         font: "1.3rem Inconsolata, monospace",
+        textDecoration: "underline",
         cursor: "pointer",
-        color: "white",
+        color: "aqua",
     },
     text: {
         color: "white",
