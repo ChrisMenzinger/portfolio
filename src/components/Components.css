@@ -61,6 +61,16 @@
     min-width: 800px;
 }
 
+.exp-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 800px;
+    margin-bottom: 300px;
+}
+
 h1 {
     font-family: "Poppins", Sans-serif;
     font-weight: 600;

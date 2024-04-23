@@ -16,15 +16,14 @@ export function Navbar() {
 
     return (
         <div className={`navbar ${isHidden ? "hidden" : "visible"}`}>
-            <NavButton name="// home"/>
-            <NavButton name="// expertise"/>
-            <NavButton name="// work"/>
-            <NavButton name="// experience"/>
-            <NavButton name="// contact"/>
+            <NavButton name="// home" onClick={() => window.scroll({top: 1, behavior: "smooth"})}/>
+            <NavButton name="// expertise" onClick={() => window.scroll({top: 1000, behavior: "smooth"})}/>
+            <NavButton name="// experience" onClick={() => window.scroll({top: 2000, behavior: "smooth"})}/>
+            <NavButton name="// contact" onClick={() => window.scroll({top: 10000, behavior: "smooth"})}/>
         </div>
     );
 }
 
 const NavButton = (props) => {
-    return <button className="button">{props.name}</button>;
+    return <button className="button" onClick={props.onClick}>{props.name}</button>;
 };

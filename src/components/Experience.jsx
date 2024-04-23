@@ -26,7 +26,7 @@ export function Experience() {
     const toolsPA = ["Spring", "Rest-API", "Jenkins", "Git", "SQL", "Java"]
 
     return (
-        <div className="header">
+        <div className="exp-header">
             <h3 style={{margin: 20}}>PROFESSIONAL EXPERIENCE</h3>
             <div style={styles.container}>
                 <ExpElement title="Software Engineer @ Compax" time="2023 - Present" open={open1}
